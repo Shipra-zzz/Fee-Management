@@ -1,5 +1,5 @@
 var numberOfButtons=document.querySelectorAll(".drum").length;
-
+alert("Click the buttons or enter the keys 'w','a','s','d','j','k','l' to play the DRUM!!! 
 for(var i=0; i<numberOfButtons; i++){ 
 
     document.querySelectorAll(".drum")[i].addEventListener("click", function () {
@@ -45,7 +45,7 @@ function makeSound(key){
                 break;
             
 
-        default:    alert("Press w,a,s,d,j,k or l only..");
+        default:    console.log(key);
             break;
     }
 }
